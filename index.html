@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易页面</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        body {
+            font-family: verdana, sans-serif;
+            background-color: #F9F9F9;
+        }
+
+        .header {
+            width: 960px;
+            height: 81px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding-top: 30px;
+        }
+
+        .header .logo {
+            width: 644px;
+            height: 27px;
+            background: url("../img/glb.png") no-repeat 0 0;
+            float: left;
+        }
+
+        .header .logo a {
+            width: 129px;
+            height: 27px;
+            display: inline-block;
+        }
+
+        .header .yc {
+            width: 116px;
+            height: 27px;
+            float: right;
+            color: #9D9D9D;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .header .yc a {
+            display: inline-block;
+            width: 49px;
+            height: 15px;
+            text-align: center;
+            color: #003399;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .content {
+            width: 960px;
+            height: 745px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .content .tou {
+            width: 960px;
+            height: 38px;
+            background: url("../img/line.png") repeat-x;
+            /*padding-left: 21px;*/
+            text-indent: 21px;
+            font-family: verdana, sans-serif;
+        }
+
+        .content .lineleft {
+            width: 960px;
+            height: 38px;
+            background: url("../img/lineleft.png") no-repeat left 0;
+        }
+
+        .content .lineright {
+            width: 960px;
+            height: 38px;
+            background: url("../img/lineright.png") no-repeat right 0;
+        }
+
+        .content .tou h1 {
+            text-align: left;
+            font-size: 14px;
+            line-height: 38px;
+            color: white;
+            /*字体的区别在这里*/
+            font-weight: normal;
+        }
+
+        .content .bottom {
+            width: 960px;
+            height: 715px;
+            border-width: 0 1px 1px 1px;
+            border-style: solid;
+            border-color: #E0E0E0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .content .bottom .bottomleft {
+            width: 641px;
+            height: 714px;
+            /*background-color: #ffba9d;*/
+            float: left;
+            background-color: white;
+            border-right: 1px solid #E0E0E0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .content .bottom .bottomleft .bottomtitle {
+            width: 527px;
+            height: 34px;
+            background-color: #58fcff;
+            margin-left: 116px;
+            margin-top: 50px;
+            background: url("../img/tab.jpg") no-repeat 0 0;
+            margin-bottom: 32px;
+        }
+
+        .content .bottom .bottomleft .bottomtitle ul {
+            list-style: none;
+        }
+
+        .content .bottom .bottomleft .bottomtitle ul li {
+            width: 137px;
+            height: 34px;
+            float: left;
+            font-size: 14px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        ul > #bs {
+            color: white;
+        }
+
+        ul .bbs {
+            color: #878787;
+        }
+
+        .content .bottom .bottomright {
+            width: 317px;
+            height: 714px;
+            background-color: #F5F5F5;
+            float: right;
+        }
+
+        .content .bottom .bottomright img {
+            margin-top: 106px;
+            margin-left: 47px;
+        }
+
+        .content .bottom .bottomleft #bigbox {
+            width: 438px;
+            height: 553px;
+            /*background-color: #ff6f8d;*/
+            margin-left: 76px;
+        }
+
+        #bigbox .one {
+            width: 438px;
+            height: 70px;
+            /*background-color: #d3ff3b;*/
+        }
+
+        #bigbox .one .left1 {
+            width: 104px;
+            height: 28px;
+            /*background-color: #95ffb8;*/
+            font-size: 14px;
+            line-height: 28px;
+            text-align: right;
+            padding-right: 16px;
+            margin-left: 13px;
+            color: #555555;
+        }
+
+        #bigbox .one .left11 {
+            width: 104px;
+            height: 28px;
+            /*background-color: #95ffb8;*/
+            font-size: 14px;
+            line-height: 28px;
+            text-align: right;
+            padding-right: 16px;
+            margin-left: 10px;
+            color: #555555;
+        }
+
+        #bigbox .one .left2 {
+            width: 104px;
+            height: 28px;
+            /*background-color: #95ffb8;*/
+            font-size: 14px;
+            line-height: 28px;
+            text-align: right;
+            padding-right: 16px;
+            margin-left: 38px;
+            color: #555555;
+
+        }
+
+        #bigbox #specials {
+            color: red;
+        }
+
+        #bigbox .one #inp {
+            width: 210px;
+            height: 26px;
+            border: 1px solid #D5D5D5;
+            /*margin-left: 14px;*/
+        }
+
+        #bigbox .one #sel {
+            width: 96px;
+            height: 24px;
+            border: 1px solid black;
+        }
+
+        #bigbox p {
+            font-size: 12px;
+            color: #999999;
+            margin-top: 9px;
+            margin-left: 104px;
+        }
+
+        #bigbox .nomal {
+            width: 334px;
+            height: 28px;
+            border: 1px solid #D5D5D5;
+        }
+
+        #p1 {
+            padding-top: 10px;
+        }
+
+        #bigbox .two {
+            width: 438px;
+            height: 129px;
+            /*background-color: #58fcff;*/
+        }
+
+        #bigbox .two .left3 {
+            width: 104px;
+            height: 28px;
+            /*background-color: #95ffb8;*/
+            font-size: 14px;
+            line-height: 28px;
+            text-align: right;
+            padding-right: 16px;
+            margin-left: 24px;
+            color: #555555;
+        }
+
+        .two > #beside {
+            width: 336px;
+            height: 129px;
+            /*background-color: #3b3dff;*/
+            float: right;
+        }
+
+        .two > #beside > #besideleft {
+            width: 213px;
+            height: 129px;
+            /*background-color: #ff8bb2;*/
+            float: left;
+        }
+
+        .two > #beside > #besideleft > .inp2 {
+            margin-top: 8px;
+            width: 208px;
+            height: 28px;
+            border: 1px solid #D5D5D5;
+            overflow: hidden;
+        }
+
+        .two > #beside > #besideleft > #sp {
+            width: 192px;
+            height: 15px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #999999;
+            /*margin-top: 21px;*/
+            /*background-color: #d1ff88;*/
+            margin-top: 20px;
+        }
+
+        .two > #beside > #besideleft > .free {
+            width: 140px;
+            height: 30px;
+            background: url("../img/qiepian.png") repeat;
+        }
+
+        .two > #beside > #besideleft > .free > .free1 {
+            width: 140px;
+            height: 30px;
+            background: url("../img/freeleft.png") no-repeat left 0;
+        }
+
+        .two > #beside > #besideleft > .free > .free1 > .free2 {
+            width: 140px;
+            height: 30px;
+            background: url("../img/freeright.png") no-repeat right 0;
+            text-indent: 25px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            font-size: 13px;
+            line-height: 30px;
+            color: #555555;
+        }
+
+        .two > #beside > #besideright {
+            width: 120px;
+            height: 82px;
+            /*background-color: #46ffdd;*/
+            float: right;
+        }
+
+        .two > #beside > #besideright > #calldo {
+            width: 140px;
+            height: 51px;
+            border: 1px solid #D5D5D5;
+
+        }
+
+        .two > #beside > #besideright > #changepic {
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        #bigbox .three {
+            width: 438px;
+            height: 107px;
+            /*background-color: #6a3eff;*/
+        }
+
+        #bigbox .three .left4 {
+            width: 104px;
+            height: 28px;
+            /*background-color: #95ffb8;*/
+            font-size: 14px;
+            line-height: 28px;
+            text-align: right;
+            padding-right: 16px;
+            margin-left: -4px;
+            color: #898989;
+
+        }
+
+        #bigbox .four {
+            width: 119px;
+            height: 37px;
+            /*background-color: #ffba9d;*/
+            margin-left: 101px;
+            background: url("../img/glb.png") no-repeat 0px -360px;
+            color: white;
+            line-height: 37px;
+            text-align: center;
+            font-size: 14px;
+
+        }
+
+        .footer {
+            width: 960px;
+            height: 40px;
+            margin: 0 auto;
+            text-align: center;
+            color: #999999;
+            margin: auto;
+            clear: both;
+            line-height: 40px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: #999999;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="http://mail.163.com/" title="网易163免费邮" target="_blank"></a>
+        <a href="http://www.126.com/" title="网易126免费邮" target="_blank"></a>
+        <a href="http://www.yeah.net/" title="网易Yeah.net免费邮" target="_blank"></a>
+    </div>
+    <div class="yc">
+        <a href="http://mail.163.com/html/mail_intro/" target="_blank" title=""> 了解更多</a>
+        |
+        <a href="http://help.mail.163.com/faq.do" target="_blank" title="">反馈意见</a>
+
+    </div>
+</div>
+<div class="content">
+    <div class="tou">
+        <div class="lineleft">
+            <div class="lineright">
+                <h1>欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</h1>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <div class="bottomleft">
+            <div class="bottomtitle">
+                <ul>
+                    <li id="bs"><strong>注册字母邮箱</strong></li>
+                    <li class="bbs">注册手机号码邮箱</li>
+                    <li class="bbs">注册VIP邮箱</li>
+                </ul>
+            </div>
+            <div id="bigbox">
+                <div class="one">
+                    <span class="left1"><span id="specials">*</span>
+                        邮件地址</span>
+                    <input type="text" id="inp"/>@<select name="" id="sel">
+                    <option value="163.com">163.com</option>
+                    <option value="126.com">126.com</option>
+                    <option value="yeah.net">yeah.net</option>
+                </select>
+                    <p>
+                        6~18个字符，可使用字母、数字、下划线，需以字母开头
+                    </p>
+                </div>
+                <div class="one">
+                   <span class="left2"><span id="specials">*</span>
+                        密码</span>
+                    <input type="password" class="nomal"/>
+                    <p>
+                        6~16个字符，区分大小写
+                    </p>
+                </div>
+                <div class="one">
+                    <span class="left11"><span id="specials">*</span>
+                        确认密码</span>
+                    <input type="password" class="nomal"/>
+                    <p>
+                        请再次填写密码
+                    </p>
+                </div>
+                <div class="one">
+                      <span class="left11"><span id="specials">*</span>
+                        手机号码</span>
+                    <input type="text" class="nomal"/>
+                    <p>
+                        忘记密码时，可以通过该手机号码快速找回密码
+                    </p>
+
+                </div>
+                <div class="two">
+                    <span class="left3"><span id="specials">*</span>
+                        验证码</span>
+                    <div id="beside">
+                        <div id="besideleft">
+                            <input type="text" class="inp2"/>
+                            <p id="sp">
+                                请填写图片中的字符，不区分大小写
+                            </p>
+                            <div class="free">
+                                <div class="free1">
+                                    <div class="free2">
+                                        <strong>免费获取验证码</strong>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div id="besideright">
+                            <img src="../img/calldo.jpg" alt="" id="calldo"/>
+                            <a href="" id="changepic">看不清楚？换张图片</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="three">
+                      <span class="left4"><span id="specials">*</span>
+                        短信验证码</span>
+                    <input type="text" class="nomal"/>
+                    <p>
+                        请查收手机短信，并填写短信中的验证码
+                    </p>
+                    <p id="p1"><input type="checkbox" checked="checked"/> 同意<a
+                            href="http://reg.163.com/agreement.shtml"> "服务条款"</a>和<a
+                            href="http://reg.163.com/agreement_game.shtml"> "隐私权相关政策"</a></p>
+
+                </div>
+                <div class="four">
+                    <strong>立即注册</strong>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bottomright">
+            <img src="../img/yxds.gif"/>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <a href="http://gb.corp.163.com/gb/home.shtml" target="_blank" title=""> 关于网易 </a>
+
+    <a href="http://mail.163.com/html/mail_intro/" target="_blank" title="">关于网易免费邮</a>
+
+    <a href="http://mail.blog.163.com/" target="_blank" title="">邮箱官方博客</a>
+
+    <a href="http://help.mail.163.com/service.html" target="_blank" title="">客户服务 </a>
+
+    <a href="http://gb.corp.163.com/gb/legal.html" target="_blank" title="">隐私政策</a>
+    |
+    网易公司版权所有 &nbsp;&copy;&nbsp; 1997-2017
+</div>
+</body>
+</html>
