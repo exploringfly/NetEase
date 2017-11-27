@@ -20,7 +20,7 @@
         .header .logo {
             width: 644px;
             height: 27px;
-            background: url("../img/glb.png") no-repeat 0 0;
+            background: url("img/glb.png") no-repeat 0 0;
             float: left;
         }
 
@@ -59,7 +59,7 @@
         .content .tou {
             width: 960px;
             height: 38px;
-            background: url("../img/line.png") repeat-x;
+            background: url("img/line.png") repeat-x;
             /*padding-left: 21px;*/
             text-indent: 21px;
             font-family: verdana, sans-serif;
@@ -68,13 +68,13 @@
         .content .lineleft {
             width: 960px;
             height: 38px;
-            background: url("../img/lineleft.png") no-repeat left 0;
+            background: url("img/lineleft.png") no-repeat left 0;
         }
 
         .content .lineright {
             width: 960px;
             height: 38px;
-            background: url("../img/lineright.png") no-repeat right 0;
+            background: url("img/lineright.png") no-repeat right 0;
         }
 
         .content .tou h1 {
@@ -115,7 +115,7 @@
             background-color: #58fcff;
             margin-left: 116px;
             margin-top: 50px;
-            background: url("../img/tab.jpg") no-repeat 0 0;
+            background: url("img/tab.jpg") no-repeat 0 0;
             margin-bottom: 32px;
         }
 
@@ -291,19 +291,19 @@
         .two > #beside > #besideleft > .free {
             width: 140px;
             height: 30px;
-            background: url("../img/qiepian.png") repeat;
+            background: url("img/qiepian.png") repeat;
         }
 
         .two > #beside > #besideleft > .free > .free1 {
             width: 140px;
             height: 30px;
-            background: url("../img/freeleft.png") no-repeat left 0;
+            background: url("img/freeleft.png") no-repeat left 0;
         }
 
         .two > #beside > #besideleft > .free > .free1 > .free2 {
             width: 140px;
             height: 30px;
-            background: url("../img/freeright.png") no-repeat right 0;
+            background: url("img/freeright.png") no-repeat right 0;
             text-indent: 25px;
             margin-top: 10px;
             box-sizing: border-box;
@@ -355,7 +355,7 @@
             height: 37px;
             /*background-color: #ffba9d;*/
             margin-left: 101px;
-            background: url("../img/glb.png") no-repeat 0px -360px;
+            background: url("img/glb.png") no-repeat 0px -360px;
             color: white;
             line-height: 37px;
             text-align: center;
